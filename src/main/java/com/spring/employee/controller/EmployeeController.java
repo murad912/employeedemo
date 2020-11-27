@@ -38,4 +38,10 @@ public class EmployeeController {
     public void deleEmployee(@PathVariable("id") Long id){
         service.deleteEmployee(id);
     }
+
+    @RequestMapping("/greet")
+    public String greet(){
+        return "Hello user!";
+    }
+
  }
